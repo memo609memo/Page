@@ -1,0 +1,96 @@
+/* General body styling */
+body {
+    background-color: #2f2f2f;  /* Dark grey background */
+    color: white;               /* White text color */
+    font-family: 'Roboto', sans-serif;  /* Using Roboto for a better font */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+
+/* Header for the title */
+header h1 {
+    color: #f1f1f1;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+/* Container for all content */
+#container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #3a3a3a;  /* Slightly lighter dark grey */
+    border-radius: 10px;
+}
+
+/* Display box for the selected word */
+#displayBox {
+    background-color: #444444;  /* Slightly darker grey for the display box */
+    color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 3px solid black;  /* Black border around display box */
+}
+
+#displayText {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+/* Text-to-Speech button */
+#speakButton {
+    background-color: #28a745;
+    color: white;
+    font-size: 20px;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#speakButton:hover {
+    background-color: #218838;
+}
+
+/* Categories and word boxes */
+.category {
+    margin-top: 20px;
+}
+
+.category h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.wordBoxContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.wordBox {
+    background-color: #555555;
+    color: white;
+    font-size: 1.1em;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    border: 3px solid black;  /* Black outline on word boxes */
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.wordBox:hover {
+    background-color: #666666;
+}

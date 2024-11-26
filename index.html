@@ -2,9 +2,61 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nana's App</title>
+    <!-- Importing Roboto font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<header>
+    <h1>Nana's App</h1>
+</header>
 
+<div id="container">
+    <!-- Display selected word -->
+    <div id="displayBox">
+        <span id="displayText">Click a word</span>
+        <button id="speakButton" onclick="speakWord()">🔊</button>
+    </div>
+
+    <!-- Categories of words -->
+    <div class="category">
+        <h2>Names</h2>
+        <div class="wordBoxContainer">
+            <div class="wordBox" onclick="changeWord('Memo')">Memo</div>
+            <div class="wordBox" onclick="changeWord('Jules')">Jules</div>
+            <div class="wordBox" onclick="changeWord('Tommy')">Tommy</div>
+            <div class="wordBox" onclick="changeWord('Nikki')">Nikki</div>
+            <div class="wordBox" onclick="changeWord('Tom')">Tom</div>
+            <div class="wordBox" onclick="changeWord('Ann')">Ann</div>
+            <div class="wordBox" onclick="changeWord('Dana')">Dana</div>
+            <div class="wordBox" onclick="changeWord('Erik')">Erik</div>
+            <div class="wordBox" onclick="changeWord('Mike')">Mike</div>
+            <div class="wordBox" onclick="changeWord('Britney')">Britney</div>
+        </div>
+    </div>
+
+    <div class="category">
+        <h2>Pronouns</h2>
+        <div class="wordBoxContainer">
+            <div class="wordBox" onclick="changeWord('friends')">friends</div>
+            <div class="wordBox" onclick="changeWord('pets')">pets</div>
+        </div>
+    </div>
+
+    <div class="category">
+        <h2>Places</h2>
+        <div class="wordBoxContainer">
+            <div class="wordBox" onclick="changeWord('home')">home</div>
+            <div class="wordBox" onclick="changeWord('school')">school</div>
+            <div class="wordBox" onclick="changeWord('gym')">gym</div>
+            <div class="wordBox" onclick="changeWord('work')">work</div>
+            <div class="wordBox" onclick="changeWord('restaurant')">restaurant</div>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
